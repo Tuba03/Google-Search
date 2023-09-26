@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Advanced Search</title>
+  </head>
+  <style>
+    .nav-bar{
+      background-color: rgb(250, 250, 250);
+      box-shadow: rgb(243, 243, 243) 0px 2px ;
+    }
+    .nav-link{
+        padding: 5px 5px;
+      }
+    .buttons{
+        display: flex;
+    }
+   
+    .bar {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+    }
+
+    div.main div.fields {
+    clear: both;
+    }
+
+    div.main div.field {
+    float: left;
+    min-width: 167px;
+    height: 42px;
+    color: #222;
+    }
+
+
+    div.main div.u-input {
+    float: left;
+    min-width: 167px;
+    width: 50%;
+    }
+
+    div.main div.u-input input[type=text],div.main div.u-input span.data {
+    width: 100%;
+    text-align: left
+    }
+
+    .search-button{
+      background-color: #4d90fe;
+      background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+      padding: 4px 12px;
+      float: left;
+      margin: 10px 0px;
+      border: 1px solid #3079ed;
+      color: #fff;
+      border-radius: 2px;
+      font-size: 12px;
+      box-shadow: none;
+      cursor: pointer;
+    }
+
+  </style>
+  <body>
+    <nav class="nav-bar">
+        <div class="buttons">
+          <a class="nav-link" style="text-decoration: none; color: black;" aria-current="page" href="index.html" > Main </a>
+        </div>
+    </nav>
+
+    <div class="bar">
+        <label style="margin-left:10px">Advanced Search</label>
+    </div>
+    <div class="form">
+        <form action="https://google.com/search" name="f">
+            <div class="main">
+                <div class="fields">
+                    <div class="input0">
+                        <div class="data">
+                            <span>Find pages with...</span>    
+                        </div>
+                    </div>
+                    <div class="blank">&nbsp; </div>
+            </div>
+            <div class="main">
+                 <div class="fields">
+                    <div class="field">
+                        <div class="data">
+                            <label for="input1">all these words:</label>    
+                        </div>
+                    </div>
+                    <div class="u-input">
+                        <div class="data2">
+                            <input class="textinput" value="" autofocus="autofocus" id="input1" name="as_q" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <div class="field">
+                        <div class="data">
+                            <label for="input2">this exact word or phrase:</label>    
+                        </div>
+                    </div>
+                    <div class="u-input">
+                        <div class="data2">
+                            <input class="textinput" value="" id="input2" name="as_epq" type="text">
+                        </div>
+                    </div>  
+                </div>
+                <div class="fields">
+                            <div class="field"> <div class="data">
+                                <label for="input3">any of these words:</label>    
+                            </div>
+                        </div>
+                        <div class="u-input">
+                            <div class="data2">
+                                <input class="textinput" value="" id="input3" name="as_oq" type="text">
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="fields">
+                        <div class="field">
+                            <div class="data">
+                                <label for="input4">none of these words:</label>    
+                            </div>
+                        </div>
+                        <div class="u-input">
+                            <div class="data2">
+                                <input class="textinput" value="" id="input4" name="as_eq" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="google-Search">
+                            <input type="submit" value="Advanced Search" class="search-button">
+                        </div>
+                    </div>
+           
+                </div>
+            </div>
+        </form>
+  </body>
+</html>

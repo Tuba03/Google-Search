@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search</title>
+  </head>
+  <style>
+    .nav-bar{
+      background-color: rgb(250, 250, 250);
+      box-shadow: rgb(243, 243, 243) 0px 2px ;
+    } 
+    .nav-link{
+        padding: 5px 5px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+    .buttons{
+        display: flex;
+        justify-content: end;
+    }
+
+    .google-Search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        height: 70vh;
+    }
+    .search-button{
+        height: 38px;
+        width: 120px;
+        border-radius: 6px;
+        border: none;
+        justify-content: center;
+        margin: 0px 10px;
+        background-color: rgb(165, 165, 165);
+        text-align: center;
+        align-items: center;
+        color: white;
+    }
+    .search-box{
+        height: 32px;
+        width: 400px;
+        padding: 2px 8px;
+        margin: auto;
+        border-radius: 0.8cm;
+        outline-width: 0;
+        outline: none;
+        border: none;
+        justify-content: center;
+        display: grid;
+        align-items: center;
+        background-color: rgb(201, 201, 201);
+    }
+    input[type=text]{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  </style>
+  
+  <body>
+    <nav class="nav-bar">
+        <div class="buttons" align="right">
+          <a class="nav-link" style="text-decoration: none; color: black;" aria-current="page" href="index2.html" >Image Search</a>
+          <a class="nav-link" style="text-decoration: none; color: black;" href="index3.html">Advanced Search</a>
+        </div>
+    </nav>
+    <div class="google-Search">
+      <form action="https://google.com/search">
+        <input type="text" placeholder="Type your search" name="q" class="search-box"><br>
+        <div align="center">
+            <input type="submit" value="Google Search" class="search-button">
+            <input type="submit" value="I'm Feeling Lucky" name="btnI" class="search-button">
+        </div>
+    </form>
+        </form>
+    </div>
+  </body>
+</html>

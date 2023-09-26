@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Search</title>
+  </head>
+  <style>
+    .nav-bar{
+      background-color: rgb(250, 250, 250);
+      box-shadow: rgb(243, 243, 243) 0px 2px ;
+    } 
+    .nav-link{
+        padding: 5px 5px;
+      }
+    .buttons{
+        display: flex;
+    }
+    .google-Search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        height: 70vh;
+    }
+    .search-button{
+        height: 38px;
+        width: 120px;
+        /* padding: 2px 2px; */
+        border-radius: 6px;
+        border: none;
+        justify-content: center;
+        margin: 0px 10px;
+        background-color: rgb(165, 165, 165);
+        text-align: center;
+        align-items: baseline;
+        color: white;
+    }
+    .search-box{
+        height: 32px;
+        width: 400px;
+        padding: 2px 8px;
+        margin: auto;
+        border-radius: 0.8cm;
+        outline-width: 0;
+        outline: none;
+        border: none;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: rgb(207, 207, 207);
+    }
+    input[type=text]{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  </style>
+  <body>
+    <nav class="nav-bar">
+        <div class="buttons">
+          <a class="nav-link" style="text-decoration: none; color: black;" aria-current="page" href="index.html" > Main </a>
+        </div>
+    </nav>
+    <div class="google-Search" align="center">
+        <form method="get" action="http://images.google.com/images">
+            <input type="text" placeholder="Type your search" name="q" class="search-box"><br>
+            <input type="submit" value="Image Search" class="search-button">
+        </form>
+    </div>
+  </body>
+</html>
