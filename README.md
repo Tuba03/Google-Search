@@ -1,17 +1,81 @@
-<h1>Specification:</h1>
+# Google Search Clone – HTML & CSS Project
 
-This website has three pages: one for regular Google Search, one for Google Image Search, and one for Google Advanced Search.<br>
-On the Google Search page, there is a links in the upper-right of the page to go to Image Search or Advanced Search.
-<br>
-<br>
-<h2>Google Search</h2>
-On the Google Search page, the user is be able to type in a query, click “Google Search”, and be taken to the Google search results for that page.<br><br>
-<h3>Google Advanced Search</h3>
-On the Google Advanced Search page, the user is be able to provide input for the following four fields (taken from Google’s own advanced search options) <br>
-Find pages with… “all these words:”<br>
-Find pages with… “this exact word or phrase:”<br>
-Find pages with… “any of these words:”<br>
-Find pages with… “none of these words:”<br><br>
-When the “Advanced Search” button is clicked, the user is be taken to the search results page for their given query.<br><br>
-Added an “I’m Feeling Lucky” button to the main Google Search page. Consistent with Google’s own behavior, clicking this link will take users directly to the first Google search result for the query, bypassing the normal results page.<br>
-It will encounter a redirect notice when using the “I’m Feeling Lucky” button.
+This project replicates the layout and functionality of Google's search interface using only **HTML and CSS**. It includes:
+
+- ✅ A basic search page
+- ✅ An image search page
+- ✅ An advanced search form
+
+All pages are fully functional and redirect to real Google search results using GET requests.
+
+---
+
+## 📄 Pages Overview
+
+### 🔍 Main Search Page (`index.html`)
+- Lets users enter a search query and submit via:
+  - **Google Search** – redirects to Google results
+  - **I'm Feeling Lucky** – redirects to the first result
+- Includes navigation links to:
+  - Image Search (`index2.html`)
+  - Advanced Search (`index3.html`)
+
+### 🖼️ Image Search Page (`index2.html`)
+- Submits queries to **Google Image Search**
+- Styled similarly to the main page
+
+### 🧠 Advanced Search Page (`index3.html`)
+- Includes four fields:
+  - All these words
+  - This exact word or phrase
+  - Any of these words
+  - None of these words
+- Mimics Google's official Advanced Search
+- Submits to `https://www.google.com/search` with advanced parameters (`as_q`, `as_epq`, etc.)
+
+---
+
+## 🧰 Technologies Used
+
+- **HTML5** – Page structure, forms, and navigation
+- **CSS3** – Styling, layout (flex/grid), custom buttons
+- **Google Search Query Parameters** – Enables actual search redirection
+
+---
+
+## 🚀 How to Run the Project
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Tuba03/Google-Search
+   cd Google-Search
+
+2. Open any of the following files in a web browser:
+
+- `index.html` (Main Search)
+
+- `index2.html` (Image Search)
+
+- `index3.html` (Advanced Search)
+
+3. Use the top navigation or form inputs to explore search functionality.
+
+---
+
+## 💡 Features
+- Real working search queries using Google endpoints
+
+- Simple and responsive UI using flex and grid
+
+- Semantic HTML layout for each page
+
+- No JavaScript – pure HTML and CSS project
+
+
+## 🙋‍♀️ About Me
+
+I’m a Electronics & Computer Engineering graduate passionate about frontend development and AI.
+
+This project helped me build a clean, responsive UI from scratch while practicing HTML form submission and layout styling.
+
+
